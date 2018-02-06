@@ -3,6 +3,7 @@ package com.example.junhee.javawithkt
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 
 import kotlinx.android.synthetic.main.activity_main2.*
 
@@ -12,6 +13,8 @@ class Main2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         setSupportActionBar(toolbar)
+
+        Toast.makeText(this, "hi", Toast.LENGTH_SHORT).show()
 
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
