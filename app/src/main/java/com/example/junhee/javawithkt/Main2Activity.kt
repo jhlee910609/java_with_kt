@@ -9,7 +9,8 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main2.*
 
 class Main2Activity : AppCompatActivity(), Main2View {
-    override var presenter: Main2Presenter = Main2Presenter(this)
+
+    override var presenter: Main2Presenter = Main2Presenter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
